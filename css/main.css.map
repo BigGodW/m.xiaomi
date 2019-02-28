@@ -1,9 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAGA,AAAA,IAAI,CAAA;EACA,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,MAAM;CACjB",
+    "mappings": "AAEA,AAAA,IAAI,CAAA;EACA,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,MAAM;CAEjB;;AACD,AAAA,CAAC,CAAA;EACG,UAAU,EAAE,UAAU;CACzB;;AACD,AAAA,EAAE,CAAA;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CAKb;;AAPD,AAGG,EAHD,CAGC,EAAE,CAAA;EACD,UAAU,EAAE,IAAI;CAEhB",
     "sources": [
         "main.scss",
-        "../node_modules/hotcss/src/px2rem.scss"
+        "px2rem.scss"
     ],
     "names": [],
     "file": "main.css"

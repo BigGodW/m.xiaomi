@@ -1,1 +1,193 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+.header {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 16rem;
+  height: 2.98667rem;
+  background: #f2f2f2;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.header .header-top {
+  height: 1.792rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-top .header-left {
+  width: 2.13333rem;
+  padding: 0 0.42667rem;
+}
+
+.header .header-top .header-left img {
+  width: 80%;
+}
+
+.header .header-top .header-middle {
+  width: 11.73333rem;
+  position: relative;
+}
+
+.header .header-top .header-middle input {
+  width: 100%;
+  height: 1.32267rem;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  font-size: 0.74667rem;
+  color: #666;
+  padding: 0 1.06667rem;
+  border-radius: 0.04267rem;
+}
+
+.header .header-top .header-middle i {
+  position: absolute;
+  top: 0.23467rem;
+  left: 0.256rem;
+  font-size: 0.64rem;
+  line-height: 0.896rem;
+}
+
+.header .header-top .header-right {
+  width: 2.13333rem;
+}
+
+.header .header-top .header-right i {
+  display: block;
+  font-size: 0.74667rem;
+  line-height: 0.74667rem;
+  text-align: center;
+}
+
+.header .header-nav {
+  height: 1.216rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.header .header-nav ul li {
+  float: left;
+  font-size: 0.64rem;
+  margin: 0 0.42667rem;
+  line-height: 1.17333rem;
+  color: #747474;
+}
+
+.header .header-nav ul li.active {
+  color: #ed5b00;
+  border-bottom: 0.04267rem solid #ed5b00;
+}
+
+.header .header-nav a.more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+}
+
+.header .header-nav a.more i {
+  display: inline-block;
+  width: 1.45067rem;
+  text-align: center;
+  color: #3c3c3c;
+  font-size: 0.64rem;
+}
+
+.main {
+  margin-top: 3.008rem;
+}
+
+.main .swiper .swiper-container {
+  width: 16rem;
+}
+
+.main .swiper .swiper-container img {
+  width: 100%;
+}
+
+.main .cells {
+  height: 2.944rem;
+}
+
+.main .cells ul li {
+  font-size: 0.42667rem;
+  width: 3.2rem;
+  float: left;
+}
+
+.main .cells ul li i {
+  display: block;
+  text-align: center;
+  font-size: 1.19467rem;
+  line-height: 1.19467rem;
+  margin-top: 0.512rem;
+}
+
+.main .cells ul li:nth-child(1) i {
+  color: #FF9264;
+}
+
+.main .cells ul li:nth-child(2) i {
+  color: #69D8B5;
+}
+
+.main .cells ul li:nth-child(3) i {
+  color: #F8C360;
+  font-size: 0.96rem;
+}
+
+.main .cells ul li:nth-child(4) i {
+  color: #B895FD;
+}
+
+.main .cells ul li:nth-child(5) i {
+  color: #FFAB67;
+}
+
+.main .cells ul li span {
+  font-size: 0.36267rem;
+  display: block;
+  margin-top: 0.27733rem;
+  margin-bottom: 0.59733rem;
+  text-align: center;
+  color: #bebebe;
+}
+
+.footer {
+  background: #fff;
+  height: 2.06933rem;
+  width: 16rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+}
+
+.footer ul li {
+  width: 4rem;
+  float: left;
+}
+
+.footer ul li i {
+  display: block;
+  text-align: center;
+  font-size: 0.81067rem;
+  line-height: 0.81067rem;
+  margin-top: 0.34133rem;
+}
+
+.footer ul li span {
+  font-size: 0.384rem;
+  display: block;
+  margin-top: 0.17067rem;
+  margin-bottom: 0.59733rem;
+  text-align: center;
+}
+
+.footer ul li.active {
+  color: #F66B01;
+}
+/*# sourceMappingURL=index.css.map */

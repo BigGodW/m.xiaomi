@@ -1,18 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cmn-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>小米</title>
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-152x152.png" />
     <link rel="icon" type="image/png" sizes="152x152" href="img/apple-touch-icon-152x152.png">
-    <script src="node_modules/hotcss/src/hotcss.js"></script>
+    <script src="js/hotcss.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1065076_jh0r6upoqfh.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
-
 </head>
+
 <body>
-    <script src="js/main.js"></script>    
+    <div class="app">
+        <div class="header">
+            <div class="header-top">
+                <div class="header-left">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="header-middle">
+                    <input type="text" placeholder="搜索商品名称">
+                    <i class="iconfont icon-search"></i>
+                </div>
+                <div class="header-right">
+                    <i class="iconfont icon-gerenzhuye"></i>
+                </div>
+            </div>
+            <div class="header-nav">
+                <ul class="nav">
+                    <li class="active">推荐</li>
+                    <li>手机</li>
+                    <li>智能</li>
+                    <li>电视</li>
+                    <li>笔记本</li>
+                    <li>生活周边</li>
+                    <li>家电</li>
+                </ul>
+                <a href="" class="more">
+                    <i class="iconfont icon-down"></i>
+                </a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="swiper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/swiper/1.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="img/swiper/2.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="img/swiper/3.webp" alt=""></div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+
+                </div>
+            </div>
+            <div class="cells">
+                <ul>
+                    <li>
+                        <i class="iconfont icon-huangguan"></i>
+                        <span>新品发布</span>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-gengxin"></i>
+                        <span>新品发布</span>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-dianshi"></i>
+                        <span>新品发布</span>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-zhuanshi"></i>
+                        <span>新品发布</span>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shoujiqia"></i>
+                        <span>新品发布</span>
+                    </li>
+                </ul>
+            </div>
+            <div style="height:1000px;background:yellow">dd</div>
+        </div>
+        <div class="footer">
+                <ul>
+                        <li class="active">
+                            <i class="iconfont icon-zhuye"></i>
+                            <span>首页</span>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-chaxun"></i>
+                            <span>分类</span>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-gouwuche"></i>
+                            <span>购物车</span>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-gerenzhuye"></i>
+                            <span>我的</span>
+                        </li>
+                        
+                    </ul>
+        </div>
+
+    </div>
+
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
