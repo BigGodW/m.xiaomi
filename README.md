@@ -1,3 +1,2 @@
-header-top:
-    750*84
-100*35.5 - 550*62-100*60
+# 小米商城移动端text
+## [首页](https://biggodw.github.io/m.xiaomi/)
