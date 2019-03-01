@@ -9,6 +9,8 @@ $(function(){
         el: '.swiper-pagination',
         },
     })  
+    new WOW().init();
+    $('.cell-banner').addClass('wow','flipInX')
 })
 
 $('.header-nav .nav').tap(

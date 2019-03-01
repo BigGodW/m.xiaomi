@@ -332,9 +332,14 @@
 }
 
 .main .cell-about {
-  font-size: 0.74667rem;
+  padding-bottom: 0.42667rem;
+}
+
+.main .cell-about p {
   font-weight: 700;
   text-align: center;
+  font-size: 0.74667rem;
+  line-height: 0.74667rem;
 }
 
 .footer {

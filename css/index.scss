@@ -306,9 +306,16 @@
         }
     }
     .cell-about{
-        font-size: px2rem(35);
-        font-weight: 700;
-        text-align: center;
+        padding-bottom: px2rem(20);
+        
+        p{
+            font-weight: 700;
+           
+            text-align: center;
+            font-size: px2rem(35);
+            line-height: px2rem(35);
+            
+        }
     }
 
 }
