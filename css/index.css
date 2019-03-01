@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  z-index: 99;
+  z-index: 10;
   top: 0;
   width: 16rem;
   height: 2.98667rem;
@@ -65,11 +65,18 @@
 
 .header .header-nav {
   height: 1.216rem;
-  overflow: hidden;
   position: relative;
 }
 
-.header .header-nav ul li {
+.header .header-nav .over {
+  overflow: hidden;
+}
+
+.header .header-nav .nav {
+  width: 20rem;
+}
+
+.header .header-nav .nav li {
   float: left;
   font-size: 0.64rem;
   margin: 0 0.42667rem;
@@ -77,19 +84,29 @@
   color: #747474;
 }
 
-.header .header-nav ul li.active {
+.header .header-nav .nav li.active {
   color: #ed5b00;
   border-bottom: 0.04267rem solid #ed5b00;
+}
+
+.header .header-nav .disnone {
+  display: none;
 }
 
 .header .header-nav a.more {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 99;
+  background: #f2f2f2;
   text-decoration: none;
 }
 
 .header .header-nav a.more i {
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
   display: inline-block;
   width: 1.45067rem;
   text-align: center;
@@ -97,8 +114,66 @@
   font-size: 0.64rem;
 }
 
+.header .header-nav .rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.header .header-nav .boxMore {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0rem;
+}
+
+.header .header-nav .boxMore .moreNav {
+  padding: 0 0.53333rem;
+  width: 16rem;
+  height: 6.4rem;
+  background: #f2f2f2;
+}
+
+.header .header-nav .boxMore .moreNav .list {
+  margin-left: -0.32rem;
+  margin-top: -0.42667rem;
+}
+
+.header .header-nav .boxMore .moreNav .list div {
+  float: left;
+  padding: 0.21333rem;
+  width: 3.62667rem;
+}
+
+.header .header-nav .boxMore .moreNav .list div a {
+  font-size: 0.49067rem;
+  text-decoration: none;
+  display: block;
+  background: #fff;
+  padding: 0.34133rem 0;
+  text-align: center;
+  border: 2px solid #eee;
+  border-radius: 0.21333rem;
+  color: #222;
+}
+
+.header .header-nav .boxMore .moreNav .list .active a {
+  background: #FDE0D5;
+  border-color: #FF4B00;
+  color: #ff4b00;
+}
+
+.header .header-nav .boxMore .moreNav p {
+  font-size: 0.55467rem;
+  line-height: 1.92rem;
+}
+
+.header .header-nav .block {
+  display: block;
+}
+
 .main {
   margin-top: 3.008rem;
+  margin-bottom: 2.06933rem;
 }
 
 .main .swiper .swiper-container {
@@ -155,6 +230,111 @@
   margin-bottom: 0.59733rem;
   text-align: center;
   color: #bebebe;
+}
+
+.main img {
+  width: calc(100%);
+}
+
+.main .cell-top {
+  background: #F5F5F5;
+  height: 11.62667rem;
+  position: relative;
+}
+
+.main .cell-top .cell-left {
+  width: 7.97867rem;
+  position: absolute;
+  top: 0.32rem;
+  left: 0;
+}
+
+.main .cell-top .cell-rt {
+  width: 7.97867rem;
+  position: absolute;
+  top: 0.32rem;
+  right: 0;
+}
+
+.main .cell-top .cell-rb {
+  width: 7.97867rem;
+  position: absolute;
+  top: 6.016rem;
+  right: 0;
+}
+
+.main .cell-banner {
+  padding: 0.32rem 0;
+  background: #F5F5F5;
+}
+
+.main .cell-header {
+  margin-bottom: 0.08533rem;
+  background: #F5F5F5;
+}
+
+.main .cell-body {
+  width: 16.08533rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 7.95733rem;
+          flex: 0 0 7.95733rem;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.main .cell-body .list {
+  width: 7.95733rem;
+  margin-right: 0.08533rem;
+}
+
+.main .cell-body .list .list-title {
+  height: 3.328rem;
+  background: #fff;
+  text-align: left;
+  padding-left: 0.59733rem;
+}
+
+.main .cell-body .list .list-title h3 {
+  font-size: 0.55467rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.main .cell-body .list .list-title p {
+  font-size: 0.448rem;
+  color: #747474;
+}
+
+.main .cell-body .list .list-title span {
+  color: red;
+  font-size: 0.384rem;
+}
+
+.main .cell-body .list .list-title span i {
+  font-size: 0.49067rem;
+  font-style: normal;
+}
+
+.main .cell-body .list .list-title del {
+  font-size: 0.384rem;
+}
+
+.main .cell-tv .cell-more {
+  font-size: 0.55467rem;
+  text-align: center;
+  border-top: solid #bebebe 0.04267rem;
+}
+
+.main .cell-about {
+  font-size: 0.74667rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .footer {

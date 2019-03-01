@@ -16,4 +16,12 @@ ul {
 ul li {
   list-style: none;
 }
+
+.clearfix {
+  clear: both;
+}
+
+.block {
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */

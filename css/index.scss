@@ -1,7 +1,9 @@
 @import "./px2rem.scss";
+
+
 .header{
     position: fixed;
-    z-index: 99;
+    z-index: 10;
     top: 0;
     width: 16rem;
     height: px2rem(140);
@@ -52,12 +54,15 @@
             }
         }
     }
+    
     .header-nav{
         height: px2rem(57);
-         overflow: hidden;
         position: relative;
-        
-        ul{
+        .over{
+            overflow: hidden;
+        }
+        .nav{
+            width: 20rem;
             li{
                 float: left;
                 font-size: px2rem(30);
@@ -71,12 +76,18 @@
                 border-bottom: px2rem(2) solid rgb(237, 91, 0);
             }
         }
+        .disnone{
+            display: none;
+        }
         a.more{
             position: absolute;
             top: 0;
             right: 0;
+            z-index: 99;
+            background: rgb(242,242,242);
             text-decoration: none;
             i{
+                transition:transform .8s;
                 display: inline-block;
                 width: px2rem(68);
                 text-align: center;
@@ -84,11 +95,64 @@
                 font-size: px2rem(30)
             }
         }
+        .rotate{
+
+            transform: rotate(180deg)
+        }
+        .boxMore{
+            display: none;
+            overflow: hidden;
+            position: absolute;
+            top: px2rem(0);
+            .moreNav{
+                padding: 0 px2rem(25);
+                width: 16rem;
+                height: px2rem(300);
+                background:  rgb(242,242,242);
+                .list{
+                    margin-left: px2rem(-15);
+                    margin-top: px2rem(-20);
+                    div{
+                        
+                        float: left;
+                        padding: px2rem(10);
+                        width: px2rem(170);
+                        a{
+                            font-size: px2rem(23);
+                            text-decoration: none;
+                            display: block;
+                            background: #fff;
+                            padding: px2rem(16) 0;
+                            text-align: center;
+                            border:2px solid #eee;
+                            border-radius: px2rem(10);
+                            color: #222;
+                        }
+                    }
+                    .active{
+                        a{
+                            background: #FDE0D5;
+                            border-color: #FF4B00;
+                            color: #ff4b00;
+                        }
+                    }
+                }
+                p{
+                    font-size: px2rem(26);
+                    line-height: px2rem(90);
+                }
+            }
+        }
+        .block{
+            display: block;
+        }
     }
 }
 .main{
     
     margin-top: px2rem(141);
+    margin-bottom: px2rem(97);
+    
     .swiper{
         .swiper-container{
             width: 16rem;
@@ -148,7 +212,103 @@
                 color: rgb(190, 190, 190)
             }
          }
+         
        }
+    }
+    img{
+        width: calc(100%);
+    }
+    .cell-top{
+        background:#F5F5F5;
+        height: px2rem(545);
+        position: relative;
+        .cell-left{
+            width: px2rem(374);
+            position: absolute;
+            top: px2rem(15);
+            left: 0;
+        }
+        .cell-rt{
+            width: px2rem(374);
+            position: absolute;
+            top: px2rem(15);
+            right: 0;
+           
+        }
+        .cell-rb{
+            width: px2rem(374);
+            position: absolute;
+            top: px2rem(282);
+            right: 0;
+        }
+        
+    }
+    .cell-banner{
+        padding: px2rem(15) 0;
+        background: #F5F5F5;
+       
+    }
+    .cell-header{
+        margin-bottom: px2rem(4);
+        background: #F5F5F5;
+    }
+    .cell-body{
+        width: px2rem(754);
+        display: flex;
+        align-items: flex-start;
+        flex: 0 0 px2rem(373);
+        flex-flow: wrap;
+       
+        .list{
+            width: px2rem(373);
+            margin-right: px2rem(4);
+    
+            .list-title{
+                height: px2rem(156);
+                background: #fff;
+                text-align: left;
+                padding-left: px2rem(28);
+                
+                h3{
+                    font-size: px2rem(26);
+                    font-weight: 400;
+                    color: #000;
+                }
+                p{
+                    font-size: px2rem(21);
+                    color:rgb(116,116,116);
+                }
+                span{
+                    color:red;
+                    font-size: px2rem(18);
+                    i{
+                        font-size: px2rem(23);
+                        font-style: normal;
+    
+                    }
+                    
+                }
+                del{
+                    font-size: px2rem(18);
+                }
+            }
+        }
+        
+    }
+    .cell-phone{
+      
+    }
+    .cell-tv{
+        .cell-more{
+            font-size: px2rem(26);
+            text-align: center;
+            border-top:solid rgb(190, 190, 190) px2rem(2);
+        }
+    }
+    .cell-about{
+        font-size: px2rem(35);
+        font-weight: 700;
+        text-align: center;
     }
 
 }

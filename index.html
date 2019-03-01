@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1065076_jh0r6upoqfh.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/zepto.js"></script>
+    <script src="js/touch.js"></script>
 </head>
 
 <body>
@@ -31,18 +34,38 @@
                 </div>
             </div>
             <div class="header-nav">
-                <ul class="nav">
-                    <li class="active">推荐</li>
-                    <li>手机</li>
-                    <li>智能</li>
-                    <li>电视</li>
-                    <li>笔记本</li>
-                    <li>生活周边</li>
-                    <li>家电</li>
-                </ul>
-                <a href="" class="more">
-                    <i class="iconfont icon-down"></i>
+                <div class="over">
+                        <ul class="nav">
+                                <li class="active">推荐</li>
+                                <li>手机</li>
+                                <li>智能</li>
+                                <li>电视</li>
+                                <li>笔记本</li>
+                                <li>生活周边</li>
+                                <li>家电</li>
+                            </ul>
+                </div>
+                <a href="#" class="more">
+                   <i class="iconfont icon-down"></i>
                 </a>
+                <div class="boxMore">
+                    <div class="moreNav animated fast ">
+                        <p>全部</p>
+                        <div class="list">
+                                <div class="active"><a href="#">推荐</a></div>
+                                <div><a href="#">手机</a></div>
+                                <div><a href="#">智能</a></div>
+                                <div><a href="#">电视</a></div>
+                                <div><a href="#">笔记本</a></div>
+                                <div><a href="#">生活周边</a></div>
+                                <div><a href="#">家电</a></div>
+                               
+                                
+
+                        </div>
+                    </div>
+                   
+                </div>
             </div>
         </div>
         <div class="main">
@@ -67,49 +90,222 @@
                     </li>
                     <li>
                         <i class="iconfont icon-gengxin"></i>
-                        <span>新品发布</span>
+                        <span>以旧换新</span>
                     </li>
                     <li>
                         <i class="iconfont icon-dianshi"></i>
-                        <span>新品发布</span>
+                        <span>电视热卖</span>
                     </li>
                     <li>
                         <i class="iconfont icon-zhuanshi"></i>
-                        <span>新品发布</span>
+                        <span>每日甄选</span>
                     </li>
                     <li>
                         <i class="iconfont icon-shoujiqia"></i>
-                        <span>新品发布</span>
+                        <span>米粉卡</span>
                     </li>
                 </ul>
             </div>
-            <div style="height:1000px;background:yellow">dd</div>
+            <div class="cell-top">
+                <div class="cell-left">
+                    <a href="#"><img src="img/main/one/left.webp" alt=""></a>
+                </div>
+
+                <div class="cell-rt">
+                    <a href="#"><img src="img/main/one/right-1.webp" alt=""></a>
+
+                </div>
+                <div class="cell-rb">
+                    <a href="#"><img src="img/main/one/right-2.webp" alt=""></a>
+                </div>
+
+
+            </div>
+            <div class="cell-phone">
+                <div class="cell-banner">
+                    <a href="#"><img src="img/main/one/phone.webp" alt=""></a>
+                </div>
+                <div class="cell-header">
+                    <a href="#">
+                        <img src="img/main/one/1.webp" alt="">
+                    </a>
+                </div>
+                <div class="cell-body">
+                    <div class="list">
+                        <div class="list-body">
+                            <a href="#"><img src="img/main/phone/1.webp" alt=""></a>
+                        </div>
+                        <div class="list-title">
+                            <h3>小米8 青春版</h3>
+                            <p>2400万自拍</p>
+                            <p><span><i>￥1299</i>起</span><del>￥1399</del></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="list-body">
+                            <a href="#"><img src="img/main/phone/2.webp" alt=""></a>
+                        </div>
+                        <div class="list-title">
+                            <h3>小米8 屏幕直纹版</h3>
+                            <p>压感屏幕指纹，手持超级夜景</p>
+                            <p><span><i>￥2499</i>起</span><del>￥2999</del></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="list-body">
+                            <a href="#"><img src="img/main/phone/3.webp" alt=""></a>
+                        </div>
+                        <div class="list-title">
+                            <h3>黑鲨游戏手机 Helo</h3>
+                            <p>双液冷，更能打</p>
+                            <p><span><i>￥3199</i>起</span><del>￥3499</del></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="list-body">
+                            <a href="#"><img src="img/main/phone/4.webp" alt=""></a>
+                        </div>
+                        <div class="list-title">
+                            <h3>小米6X</h3>
+                            <p>轻薄美观的拍照手机</p>
+                            <p><span><i>￥1249</i>起</span><del>￥1799</del></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="list-body">
+                            <a href="#"><img src="img/main/phone/5.webp" alt=""></a>
+                        </div>
+                        <div class="list-title">
+                            <h3>小米6 Play</h3>
+                            <p>一年流量放心用</p>
+                            <p><span><i>￥1099</i></span></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="list-body">
+                            <a href="#"><img src="img/main/phone/6.webp" alt=""></a>
+                        </div>
+                        <div class="list-title">
+                            <h3>小米平板4</h3>
+                            <p>追剧神器，支持AI人脸识别</p>
+                            <p><span><i>￥1099</i>起</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell-tv">
+                <div class="cell-banner">
+                    <a href="#"><img src="img/main/tv/banner.webp" alt=""></a>
+
+                </div>
+                <div class="cell-header">
+                    <a href="#"><img src="img/main/tv/top.webp" alt=""></a>
+                </div>
+
+                <div class="cell-body">
+                    <div class="list">
+                        <div class="list-body">
+                            <a href="#"><img src="img/main/tv/1.webp" alt=""></a>
+                        </div>
+                        <div class="list-title">
+                            <h3>小米电视4C 43英寸</h3>
+                            <p>FHD全高清屏幕，钢琴烤漆</p>
+                            <p><span><i>￥1399</i></span><del>￥1599</del></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="list-body">
+                            <a href="#"><img src="img/main/tv/2.webp" alt=""></a>
+                        </div>
+                        <div class="list-title">
+                            <h3>小米电视4A 65英寸</h3>
+                            <p>4K HDR，人工智能语音系统</p>
+                            <p><span><i>￥3399</i></span><del>￥3999</del></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="list-body">
+                            <a href="#"><img src="img/main/tv/3.jpg" alt=""></a>
+                        </div>
+                        <div class="list-title">
+                            <h3>小米电视4A 32英寸</h3>
+                            <p>人工智能系统，高清液晶屏</p>
+                            <p><span><i>￥899</i></span><del>￥999</del></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="list-body">
+                            <a href="#"><img src="img/main/tv/4.webp" alt=""></a>
+                        </div>
+                        <div class="list-title">
+                            <h3>小米电视4A 49英寸</h3>
+                            <p>人工智能语音,FHD全高清屏</p>
+                            <p><span><i>￥1699</i></span><del>￥2099</del></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                            <div class="list-body">
+                                <a href="#"><img src="img/main/tv/5.jpg" alt=""></a>
+                            </div>
+                            <div class="list-title">
+                                <h3>小米电视4c 40英寸</h3>
+                                <p>FHD全高清屏，钢琴烤漆</p>
+                                <p><span><i>￥1299</i></span><del>￥1999</del></p>
+                            </div>
+                        </div>
+                        <div class="list">
+                                <div class="list-body">
+                                    <a href="#"><img src="img/main/tv/6.webp" alt=""></a>
+                                </div>
+                                <div class="list-title">
+                                    <h3>小米电视4c 50英寸</h3>
+                                    <p>4K HDR，钢琴烤漆</p>
+                                    <p><span><i>￥1999</i></span><del>￥2199</del></p>
+                                </div>
+                            </div>
+                </div>
+                <div class="cell-more">
+                    <p>更多小米电视产品 &gt;</p>
+                </div>
+                <div class="cell-banner">
+                    <a href="#"><img src="img/main/tv/drop.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="cell-dn"></div>
+            <div class="cell-jd"></div>
+            <div class="cell-zn"></div>
+            <div class="cell-other"></div>
+            <div class="cell-about">
+                <p>了解小米</p>
+            </div>
+
         </div>
         <div class="footer">
-                <ul>
-                        <li class="active">
-                            <i class="iconfont icon-zhuye"></i>
-                            <span>首页</span>
-                        </li>
-                        <li>
-                            <i class="iconfont icon-chaxun"></i>
-                            <span>分类</span>
-                        </li>
-                        <li>
-                            <i class="iconfont icon-gouwuche"></i>
-                            <span>购物车</span>
-                        </li>
-                        <li>
-                            <i class="iconfont icon-gerenzhuye"></i>
-                            <span>我的</span>
-                        </li>
-                        
-                    </ul>
+            <ul>
+                <li class="active">
+                    <i class="iconfont icon-zhuye"></i>
+                    <span>首页</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-chaxun"></i>
+                    <span>分类</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-gouwuche"></i>
+                    <span>购物车</span>
+                </li>
+                <li>
+                    <i class="iconfont icon-gerenzhuye"></i>
+                    <span>我的</span>
+                </li>
+
+            </ul>
         </div>
 
     </div>
 
     <script src="js/swiper.min.js"></script>
+    
     <script src="js/main.js"></script>
 </body>
 
